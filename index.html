@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FEDEK – Autorisierter Ülker-Distributor in Deutschland</title>
+<meta name="description" content="FEDEK GmbH aus Hannover beliefert Supermärkte, Kioske und Fachhändler in Deutschland mit Ülker und weiteren türkischen Marken – jetzt auch per Bestell-App.">
+<meta name="theme-color" content="#17100A">
+<link rel="icon" type="image/png" href="icon-180.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/manrope-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+:root{
+  --cream:#FBF7EF; --paper:#FFFFFF; --ink:#21170F; --muted:#66574A; --line:#EADFCC;
+  --brown:#7A4E26; --gold:#B8862A; --gold-2:#E2B755; --gold-soft:#F4E6C4;
+  --dark:#17100A; --dark-2:#22180F; --on-dark:#EFE6D8; --on-dark-2:#BFAF9A; --red:#C8102E;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 17px/1.6 'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.03em;line-height:1.05}
+h2{font-size:clamp(34px,4.6vw,56px)}
+h3{font-size:20px;letter-spacing:-.01em;line-height:1.25}
+p{margin:0}
+.wrap{width:100%;max-width:1220px;margin:0 auto;padding:0 24px}
+.sec{padding:120px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--brown)}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor;border-radius:2px}
+.dark .eyebrow{color:var(--gold-2)}
+.lead{font-size:clamp(17px,1.5vw,20px);color:var(--muted);max-width:620px}
+.dark .lead{color:var(--on-dark-2)}
+.head{display:flex;flex-direction:column;gap:18px;margin-bottom:56px}
+.head.center{align-items:center;text-align:center}
+.head.center .lead{margin:0 auto}
+.ico{width:22px;height:22px;flex:0 0 auto}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;font:800 16px/1 'Manrope',sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .25s ease,background .25s ease,box-shadow .25s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold-2);color:#1A120B;box-shadow:0 10px 30px rgba(226,183,85,.25)}
+.btn-gold:hover{background:#ECC66E}
+.btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.3)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.7)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#3A2A1C}
+.btn-sm{min-height:44px;padding:0 18px;font-size:14px}
+
+/* Navigation */
+.nav{position:fixed;z-index:50;top:14px;left:50%;transform:translateX(-50%);width:calc(100% - 28px);max-width:1220px;display:flex;align-items:center;gap:20px;padding:10px 10px 10px 22px;border-radius:999px;background:rgba(251,247,239,.86);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);box-shadow:0 10px 40px rgba(23,16,10,.18);transition:box-shadow .3s}
+.brand img{height:40px;width:auto}
+.links{display:flex;gap:6px;margin-left:auto}
+.links a{text-decoration:none;font-weight:700;font-size:15px;padding:10px 14px;border-radius:999px;color:var(--ink);transition:background .2s}
+.links a:hover{background:rgba(122,78,38,.1)}
+.nav-right{display:flex;align-items:center;gap:10px}
+.lang{display:flex;padding:3px;border-radius:999px;background:#EDE3D2}
+.lang button{border:0;background:transparent;font:800 13px/1 'Manrope',sans-serif;color:var(--ink);min-width:44px;height:38px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.burger{display:none;width:44px;height:44px;border-radius:50%;border:0;background:var(--ink);color:#fff;cursor:pointer;align-items:center;justify-content:center}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(55% 60% at 78% 42%,rgba(201,150,46,.30),rgba(201,150,46,0) 70%),radial-gradient(40% 50% at 10% 100%,rgba(200,16,46,.16),rgba(200,16,46,0) 70%),var(--dark)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:40px;align-items:center;padding-top:140px;padding-bottom:40px;min-height:820px}
+.hero-copy{display:flex;flex-direction:column;gap:26px}
+.pill{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 10px;border-radius:999px;background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.14);font-size:14px;font-weight:700;color:var(--on-dark)}
+.pill .dot{width:22px;height:22px;border-radius:50%;background:var(--red);display:grid;place-items:center}
+.pill .dot::after{content:"";width:8px;height:8px;border-radius:50%;background:#fff}
+.hero h1{font-size:clamp(44px,6.4vw,84px);letter-spacing:-.04em;line-height:.98}
+.hero h1 em{font-style:normal;color:var(--gold-2)}
+.hero .lead{color:var(--on-dark-2);max-width:560px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.points{display:flex;flex-wrap:wrap;gap:10px 22px;list-style:none;margin:6px 0 0;padding:0;color:var(--on-dark);font-weight:700;font-size:15px}
+.points li{display:flex;align-items:center;gap:8px}
+.points svg{color:var(--gold-2)}
+
+.visual{position:relative;height:760px;--s:.8}
+.phone{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:11px;border-radius:calc(48px*var(--s) + 11px);background:#0A0704;box-shadow:0 0 0 1.5px #3B2F22,0 50px 120px rgba(0,0,0,.65),0 0 0 12px rgba(255,255,255,.02);z-index:3}
+.screen{width:calc(390px*var(--s));height:calc(844px*var(--s));border-radius:calc(44px*var(--s));overflow:hidden;background:#F2F1EE;position:relative}
+.screen iframe{position:absolute;left:0;top:0;width:390px;height:844px;border:0;transform:scale(var(--s));transform-origin:0 0}
+.tag{position:absolute;z-index:4;left:50%;bottom:6px;transform:translateX(-50%);white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:var(--gold-2);color:#1A120B;font-weight:800;font-size:14px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.tag::before{content:"";width:8px;height:8px;border-radius:50%;background:#1D7148;box-shadow:0 0 0 0 rgba(29,113,72,.6);animation:pulse 1.8s infinite}
+@keyframes pulse{to{box-shadow:0 0 0 10px rgba(29,113,72,0)}}
+.float{position:absolute;z-index:2;filter:drop-shadow(0 24px 30px rgba(0,0,0,.5));animation:bob 7s ease-in-out infinite alternate}
+.float.f1{width:230px;left:-4%;top:9%;--r:-16deg}
+.float.f2{width:200px;right:-6%;top:15%;--r:13deg;animation-delay:-2s}
+.float.f3{width:220px;left:-8%;bottom:20%;--r:9deg;animation-delay:-4s}
+.float.f4{width:150px;right:0;bottom:10%;--r:-10deg;animation-delay:-1s}
+.float.f5{width:170px;right:-10%;top:47%;--r:6deg;animation-delay:-3s;z-index:4}
+@keyframes bob{from{transform:translateY(-10px) rotate(var(--r))}to{transform:translateY(12px) rotate(calc(var(--r) + 3deg))}}
+
+.marquee{position:relative;padding:34px 0 46px;border-top:1px solid rgba(255,255,255,.08)}
+.marquee-label{text-align:center;font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--on-dark-2);margin-bottom:22px}
+.mq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.mq-track{display:flex;gap:16px;width:max-content;animation:mq 46s linear infinite}
+.mq:hover .mq-track{animation-play-state:paused}
+.chip{width:150px;height:76px;border-radius:18px;background:#fff;display:grid;place-items:center;padding:12px 16px;flex:0 0 auto}
+.chip img{max-height:48px;max-width:100%;object-fit:contain}
+.chip.ulker{font-weight:800;font-size:24px;letter-spacing:.02em;color:var(--red)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* Über uns */
+.about{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:64px;align-items:start}
+.about-copy{display:flex;flex-direction:column;gap:22px}
+.about-copy p{color:var(--muted);font-size:18px}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:14px}
+.fact{padding:20px;border-radius:20px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line)}
+.fact b{display:block;font-size:30px;font-weight:800;letter-spacing:-.03em;color:var(--brown)}
+.fact span{font-size:14px;color:var(--muted);font-weight:600}
+.values{display:flex;flex-direction:column;gap:14px}
+.value{display:flex;gap:18px;padding:26px;border-radius:24px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);transition:transform .3s,box-shadow .3s}
+.value:hover{transform:translateY(-3px);box-shadow:inset 0 0 0 1px var(--line),0 20px 40px rgba(122,78,38,.12)}
+.value .badge{width:52px;height:52px;border-radius:16px;background:var(--gold-soft);color:var(--brown);display:grid;place-items:center;flex:0 0 auto}
+.value p{color:var(--muted);font-size:16px;margin-top:6px}
+
+/* Sortiment */
+.range{background:var(--paper)}
+.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px}
+.cat{grid-column:span 2;position:relative;border-radius:28px;overflow:hidden;min-height:330px;display:flex;flex-direction:column;justify-content:flex-end;padding:26px;color:#fff;isolation:isolate;transition:transform .35s}
+.cat.big{grid-column:span 3;min-height:380px}
+.cat:hover{transform:translateY(-4px)}
+.cat .pics{position:absolute;inset:0;z-index:-1}
+.cat .pics img{position:absolute;filter:drop-shadow(0 18px 22px rgba(0,0,0,.35));transition:transform .5s ease}
+.cat:hover .pics img{transform:translateY(-6px) rotate(var(--r,0deg))}
+.cat .pics img{transform:rotate(var(--r,0deg))}
+.cat::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.55))}
+.cat h3{font-size:28px;letter-spacing:-.02em}
+.cat span{font-size:14px;font-weight:600;opacity:.9}
+.c-kekse{background:#7A4E26}.c-schoko{background:#3B2016}.c-waffel{background:#8F5D0C}.c-kuchen{background:#4A2817}.c-cracker{background:#A64B12}
+.range-more{margin-top:28px;text-align:center;color:var(--muted);font-weight:700}
+
+/* App */
+.dark{background:var(--dark);color:#fff}
+.app{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;align-items:center}
+.app-copy{display:flex;flex-direction:column;gap:24px}
+.stores{display:flex;flex-wrap:wrap;gap:12px}
+.store{display:inline-flex;align-items:center;gap:12px;padding:12px 20px;border-radius:16px;background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1px rgba(255,255,255,.14);color:var(--on-dark);font-weight:700;font-size:15px}
+.store svg{color:var(--gold-2)}
+.features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.feat{padding:26px;border-radius:24px;background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);transition:background .3s,transform .3s}
+.feat:hover{background:rgba(255,255,255,.08);transform:translateY(-3px)}
+.feat .badge{width:48px;height:48px;border-radius:14px;background:rgba(226,183,85,.14);color:var(--gold-2);display:grid;place-items:center;margin-bottom:18px}
+.feat p{color:var(--on-dark-2);font-size:15px;margin-top:8px}
+
+/* Marken */
+.brands{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.brand-card{height:132px;border-radius:22px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);display:grid;place-items:center;padding:18px 22px;transition:transform .3s,box-shadow .3s}
+.brand-card:hover{transform:translateY(-4px);box-shadow:inset 0 0 0 1px var(--line),0 20px 40px rgba(122,78,38,.14)}
+.brand-card img{max-height:70px;max-width:100%;object-fit:contain}
+.brand-card.ulker{box-shadow:inset 0 0 0 2px var(--red);text-align:center;align-content:center;gap:10px}
+.brand-card.ulker img{max-height:50px}
+.brand-card.ulker small{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+
+/* Kontakt */
+.contact{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:start}
+.contact-copy{display:flex;flex-direction:column;gap:22px}
+.cards{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+.ccard{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:20px;background:var(--paper);box-shadow:inset 0 0 0 1px var(--line);text-decoration:none;transition:transform .25s}
+a.ccard:hover{transform:translateX(4px)}
+.ccard .badge{width:48px;height:48px;border-radius:14px;background:var(--gold-soft);color:var(--brown);display:grid;place-items:center;flex:0 0 auto}
+.ccard small{display:block;font-size:13px;font-weight:700;color:var(--muted)}
+.ccard b{font-size:17px;font-weight:800;overflow-wrap:anywhere}
+.form{padding:36px;border-radius:30px;background:var(--paper);box-shadow:0 30px 80px rgba(122,78,38,.12),inset 0 0 0 1px var(--line);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field.full{grid-column:1/-1}
+.field label{font-size:14px;font-weight:800}
+.field input,.field textarea{font:500 16px/1.4 'Manrope',sans-serif;color:var(--ink);background:var(--cream);border:1.5px solid var(--line);border-radius:14px;padding:14px 16px;outline:none;transition:border-color .2s,background .2s;width:100%}
+.field input:focus,.field textarea:focus{border-color:var(--gold);background:#fff}
+.field textarea{resize:vertical;min-height:130px}
+.form .btn{grid-column:1/-1;justify-self:start}
+.form-note{grid-column:1/-1;font-size:13px;color:var(--muted)}
+
+/* Footer */
+footer{background:var(--dark);color:var(--on-dark-2);padding:64px 0 40px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;align-items:flex-start}
+.foot-brand{display:flex;flex-direction:column;gap:16px;max-width:360px}
+.foot-brand .logo{align-self:flex-start;background:var(--cream);border-radius:18px;padding:10px 18px}
+.foot-brand .logo img{height:44px;width:auto}
+.foot h4{margin:0 0 12px;color:#fff;font-size:15px}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:15px}
+.foot a,.linkbtn{color:var(--on-dark);text-decoration:none}
+.foot a:hover,.linkbtn:hover{color:var(--gold-2)}
+.linkbtn{background:none;border:0;padding:0;font:inherit;cursor:pointer;text-align:left}
+.copy{margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);font-size:14px}
+
+dialog{max-width:680px;width:calc(100% - 32px);border:0;border-radius:26px;padding:0;color:var(--ink);background:var(--paper);box-shadow:0 40px 120px rgba(0,0,0,.4)}
+dialog::backdrop{background:rgba(23,16,10,.6);backdrop-filter:blur(4px)}
+.dlg{padding:36px;max-height:80vh;overflow:auto}
+.dlg h2{font-size:30px;margin-bottom:18px}
+.dlg h3{font-size:17px;margin:22px 0 6px}
+.dlg p{color:var(--muted);font-size:15px}
+.dlg-close{position:sticky;top:0;float:right;width:44px;height:44px;border-radius:50%;border:0;background:var(--cream);font-size:22px;cursor:pointer;color:var(--ink)}
+
+/* Einblenden beim Scrollen */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.float,.mq-track,.tag::before{animation:none}html{scroll-behavior:auto}}
+
+/* Tablet & Telefon */
+@media (max-width:1080px){
+  .links{display:none}
+  .burger{display:inline-flex}
+  .nav.open .links{display:flex;position:absolute;top:calc(100% + 10px);left:0;right:0;flex-direction:column;gap:2px;padding:12px;border-radius:24px;background:rgba(251,247,239,.97);box-shadow:0 20px 50px rgba(23,16,10,.25)}
+  .nav.open .links a{padding:14px 16px;font-size:17px}
+  .nav-right{margin-left:auto}
+}
+@media (max-width:960px){
+  .sec{padding:84px 0}
+  .hero-grid{grid-template-columns:1fr;min-height:0;padding-top:120px;gap:10px}
+  .visual{height:600px;--s:.62}
+  .float.f1{width:150px;left:0;top:4%}
+  .float.f2{width:140px;right:0;top:10%}
+  .float.f3{width:150px;left:-4%;bottom:14%}
+  .float.f4{width:110px;right:2%;bottom:6%}
+  .float.f5{display:none}
+  .about,.app,.contact{grid-template-columns:1fr;gap:40px}
+  .bento{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat,.cat.big{grid-column:span 1;min-height:260px}
+  .brands{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:620px){
+  .wrap{padding-left:16px;padding-right:16px}
+  .nav{padding:8px 8px 8px 16px;gap:10px}
+  .brand img{height:34px}
+  .nav-cta{display:none}
+  .hero h1{font-size:44px}
+  .cta-row .btn{flex:1 1 auto}
+  .visual{height:540px;--s:.56}
+  .facts{grid-template-columns:1fr}
+  .features{grid-template-columns:1fr}
+  .bento{grid-template-columns:1fr}
+  .brands{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .brand-card{height:110px}
+  .form{grid-template-columns:1fr;padding:24px}
+  .dlg{padding:24px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="FEDEK Startseite"><img src="img/fedek.png" alt="FEDEK" width="68" height="40"></a>
+  <nav class="links" id="links" aria-label="Hauptnavigation">
+    <a href="#ueber" data-i18n="nav.about">Über uns</a>
+    <a href="#sortiment" data-i18n="nav.range">Sortiment</a>
+    <a href="#app" data-i18n="nav.app">App</a>
+    <a href="#marken" data-i18n="nav.brands">Marken</a>
+    <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+  </nav>
+  <div class="nav-right">
+    <div class="lang" role="group" aria-label="Sprache / Dil">
+      <button type="button" data-lang="de" aria-pressed="true">DE</button>
+      <button type="button" data-lang="tr" aria-pressed="false">TR</button>
+    </div>
+    <a class="btn btn-dark btn-sm nav-cta" href="#kontakt" data-i18n="nav.cta">Händler werden</a>
+    <button class="burger" type="button" id="burger" aria-label="Menü" aria-expanded="false" aria-controls="links">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="pill rv"><span class="dot"></span><span data-i18n="hero.eyebrow">Autorisierter Ülker-Distributor in Deutschland</span></span>
+      <h1 class="rv" data-i18n="hero.title">Der Geschmack der Heimat.<br><em>Direkt in Ihr Regal.</em></h1>
+      <p class="lead rv" data-i18n="hero.lead">FEDEK beliefert Supermärkte, Kioske und Fachhändler in Deutschland mit Ülker und weiteren beliebten türkischen Marken – und mit unserer App bestellen Sie rund um die Uhr.</p>
+      <div class="cta-row rv">
+        <a class="btn btn-gold" href="#app"><span data-i18n="hero.cta1">App entdecken</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#kontakt" data-i18n="hero.cta2">Händler werden</a>
+      </div>
+      <ul class="points rv">
+        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="hero.p1">Live-Preise</span></li>
+        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="hero.p2">Persönliche Konditionen</span></li>
+        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="hero.p3">Bestellen rund um die Uhr</span></li>
+      </ul>
+    </div>
+    <div class="visual rv" aria-label="FEDEK App Live-Demo">
+      <img class="float f1" src="img/p/biskrem.png" alt="" loading="eager">
+      <img class="float f2" src="img/p/halley.png" alt="">
+      <img class="float f3" src="img/p/albeni.png" alt="">
+      <img class="float f4" src="img/p/kare.png" alt="">
+      <img class="float f5" src="img/p/cokonat.png" alt="">
+      <div class="phone"><div class="screen"><iframe id="demo" src="/fedek-siparis/" title="FEDEK App – Live-Demo"></iframe></div></div>
+      <span class="tag" data-i18n="hero.tag">Live-Demo – tippen Sie hinein</span>
+    </div>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-label" data-i18n="marquee.label">Unsere Marken</div>
+    <div class="mq"><div class="mq-track" id="mq"></div></div>
+  </div>
+</section>
+
+<section class="sec" id="ueber">
+  <div class="wrap about">
+    <div class="about-copy">
+      <span class="eyebrow rv" data-i18n="about.eyebrow">Über uns</span>
+      <h2 class="rv" data-i18n="about.title">Ihr Partner für türkische Markenprodukte</h2>
+      <p class="rv" data-i18n="about.p1">Als autorisierter Ülker-Distributor bringt FEDEK aus Hannover beliebte Marken zuverlässig in den deutschen Handel. Supermärkte, Kioske und Fachgeschäfte erhalten bei uns ein breites Sortiment aus einer Hand.</p>
+      <p class="rv" data-i18n="about.p2">Dazu gehören die persönliche Betreuung durch unseren Außendienst und eine Bestell-App, die Ihren Einkauf so einfach macht wie nie zuvor.</p>
+      <div class="facts rv">
+        <div class="fact"><b>Hannover</b><span data-i18n="fact.1">Unser Standort</span></div>
+        <div class="fact"><b>15</b><span data-i18n="fact.2">Partnermarken</span></div>
+        <div class="fact"><b>DE · TR</b><span data-i18n="fact.3">Service in zwei Sprachen</span></div>
+      </div>
+    </div>
+    <div class="values">
+      <div class="value rv">
+        <span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
+        <div><h3 data-i18n="v1.t">Original &amp; autorisiert</h3><p data-i18n="v1.d">Offizielle Ware aus autorisierter Quelle – mit lückenloser Lieferkette.</p></div>
+      </div>
+      <div class="value rv">
+        <span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></span>
+        <div><h3 data-i18n="v2.t">Persönliche Betreuung</h3><p data-i18n="v2.d">Ihr fester Ansprechpartner kennt Ihr Geschäft und Ihre Kunden.</p></div>
+      </div>
+      <div class="value rv">
+        <span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span>
+        <div><h3 data-i18n="v3.t">Planbare Lieferung</h3><p data-i18n="v3.d">Feste Liefertage und klare Mindestbestellwerte – ohne Überraschungen.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec range" id="sortiment">
+  <div class="wrap">
+    <div class="head center">
+      <span class="eyebrow rv" data-i18n="range.eyebrow">Sortiment</span>
+      <h2 class="rv" data-i18n="range.title">Was Ihre Kunden lieben</h2>
+      <p class="lead rv" data-i18n="range.lead">Von Kultkeksen bis Schokolade – die bekanntesten Ülker-Produkte aus einer Hand.</p>
+    </div>
+    <div class="bento">
+      <article class="cat big c-kekse rv">
+        <div class="pics">
+          <img src="img/p/cokoprens.png" alt="" style="width:62%;left:6%;top:10%;--r:-8deg">
+          <img src="img/p/hanimeller.png" alt="" style="width:48%;right:4%;top:6%;--r:10deg">
+          <img src="img/p/biskrem.png" alt="" style="width:46%;right:10%;top:34%;--r:-4deg">
+        </div>
+        <h3 data-i18n="cat.1">Kekse</h3><span>Biskrem · Çokoprens · Hanımeller · Pötibör</span>
+      </article>
+      <article class="cat big c-schoko rv">
+        <div class="pics">
+          <img src="img/p/kare.png" alt="" style="width:34%;left:8%;top:8%;--r:-10deg">
+          <img src="img/p/albeni.png" alt="" style="width:58%;right:4%;top:12%;--r:8deg">
+          <img src="img/p/halley.png" alt="" style="width:42%;right:18%;top:38%;--r:-6deg">
+        </div>
+        <h3 data-i18n="cat.2">Schokolade</h3><span>Ülker · Albeni · Halley</span>
+      </article>
+      <article class="cat c-waffel rv">
+        <div class="pics">
+          <img src="img/p/dido.png" alt="" style="width:76%;left:10%;top:12%;--r:-8deg">
+          <img src="img/p/cokonat.png" alt="" style="width:64%;right:4%;top:34%;--r:7deg">
+        </div>
+        <h3 data-i18n="cat.3">Waffeln</h3><span>Dido · Çokonat · Ülker Gofret</span>
+      </article>
+      <article class="cat c-kuchen rv">
+        <div class="pics">
+          <img src="img/p/dankek.png" alt="" style="width:80%;left:10%;top:14%;--r:-6deg">
+        </div>
+        <h3 data-i18n="cat.4">Kuchen</h3><span>Dankek</span>
+      </article>
+      <article class="cat c-cracker rv">
+        <div class="pics">
+          <img src="img/p/cizi.png" alt="" style="width:78%;left:11%;top:14%;--r:7deg">
+        </div>
+        <h3 data-i18n="cat.5">Cracker</h3><span>Çizi</span>
+      </article>
+    </div>
+    <p class="range-more rv" data-i18n="range.more">Und viele weitere Marken – vom Kaffee bis zum Olivenöl.</p>
+  </div>
+</section>
+
+<section class="sec dark" id="app">
+  <div class="wrap app">
+    <div class="app-copy">
+      <span class="eyebrow rv" data-i18n="app.eyebrow">Die FEDEK App</span>
+      <h2 class="rv" data-i18n="app.title">Bestellen in Sekunden.</h2>
+      <p class="lead rv" data-i18n="app.lead">Ihr komplettes Sortiment, Ihre persönlichen Preise und Ihr Kundenkonto – immer in der Tasche.</p>
+      <div class="stores rv">
+        <span class="store"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span data-i18n="app.s1">App Store · demnächst</span></span>
+        <span class="store"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span data-i18n="app.s2">Google Play · demnächst</span></span>
+      </div>
+      <div class="rv"><a class="btn btn-gold" href="/fedek-siparis/" target="_blank" rel="noopener"><span data-i18n="app.demo">Live-Demo öffnen</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></div>
+    </div>
+    <div class="features">
+      <div class="feat rv"><span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span><h3 data-i18n="f1.t">Live-Preise</h3><p data-i18n="f1.d">Preise kommen direkt aus unserem Warenwirtschaftssystem – immer aktuell.</p></div>
+      <div class="feat rv"><span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 5 5 19"/><circle cx="7" cy="7" r="2.5"/><circle cx="17" cy="17" r="2.5"/></svg></span><h3 data-i18n="f2.t">Ihre Konditionen</h3><p data-i18n="f2.d">Jeder Kunde sieht ausschließlich seine eigenen Rabatte und Nettopreise.</p></div>
+      <div class="feat rv"><span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M7 8v8M10 8v8M13 8v8M17 8v8"/></svg></span><h3 data-i18n="f3.t">Barcode-Scan</h3><p data-i18n="f3.d">Regal leer? Barcode scannen, Menge wählen, fertig.</p></div>
+      <div class="feat rv"><span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a3 3 0 0 1 3-3h15"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 0 1-3 3H3"/></svg></span><h3 data-i18n="f4.t">Nachbestellen mit einem Tipp</h3><p data-i18n="f4.d">Ihre letzte Bestellung liegt mit einem Fingertipp wieder im Warenkorb.</p></div>
+      <div class="feat rv"><span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span><h3 data-i18n="f5.t">Konto &amp; Rechnungen</h3><p data-i18n="f5.d">Offene Posten, Kreditlimit und Rechnungen jederzeit im Blick.</p></div>
+      <div class="feat rv"><span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><h3 data-i18n="f6.t">Deutsch &amp; Türkisch</h3><p data-i18n="f6.d">Die App spricht Ihre Sprache – umschaltbar mit einem Tipp.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="marken">
+  <div class="wrap">
+    <div class="head center">
+      <span class="eyebrow rv" data-i18n="brands.eyebrow">Marken</span>
+      <h2 class="rv" data-i18n="brands.title">Marken, mit denen wir arbeiten</h2>
+      <p class="lead rv" data-i18n="brands.lead">Neben Ülker führen wir weitere Marken, die in keinem Regal fehlen sollten.</p>
+    </div>
+    <div class="brands" id="brands">
+      <div class="brand-card ulker rv"><img src="img/m/ulker.webp" alt="Ülker"><small data-i18n="brands.ulker">Autorisierter Distributor</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec range" id="kontakt">
+  <div class="wrap contact">
+    <div class="contact-copy">
+      <span class="eyebrow rv" data-i18n="contact.eyebrow">Kontakt</span>
+      <h2 class="rv" data-i18n="contact.title">Werden Sie FEDEK-Händler</h2>
+      <p class="lead rv" data-i18n="contact.lead">Schreiben Sie uns oder rufen Sie an – wir melden uns mit Ihren Konditionen und Ihrem Zugang zur App.</p>
+      <div class="cards">
+        <a class="ccard rv" href="tel:+490000000000">
+          <span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+          <span><small data-i18n="c.phone">Telefon</small><b>+49 000 0000000</b></span>
+        </a>
+        <a class="ccard rv" href="mailto:info@beispiel.de">
+          <span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span><small data-i18n="c.mail">E-Mail</small><b>info@beispiel.de</b></span>
+        </a>
+        <a class="ccard rv" href="https://www.google.com/maps/search/?api=1&amp;query=Musterstra%C3%9Fe+1%2C+00000+Musterstadt" target="_blank" rel="noopener">
+          <span class="badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+          <span><small data-i18n="c.addr">Adresse · Route planen</small><b>Musterstraße 1, 00000 Musterstadt</b></span>
+        </a>
+      </div>
+    </div>
+    <form class="form rv" id="form" novalidate>
+      <div class="field"><label for="f-firma" data-i18n="fm.company">Firma</label><input id="f-firma" name="firma" autocomplete="organization" required></div>
+      <div class="field"><label for="f-name" data-i18n="fm.name">Ansprechpartner</label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="f-tel" data-i18n="fm.phone">Telefon</label><input id="f-tel" name="tel" type="tel" autocomplete="tel"></div>
+      <div class="field"><label for="f-mail" data-i18n="fm.mail">E-Mail</label><input id="f-mail" name="mail" type="email" autocomplete="email"></div>
+      <div class="field full"><label for="f-msg" data-i18n="fm.msg">Nachricht</label><textarea id="f-msg" name="msg" data-i18n-ph="fm.ph" placeholder="Ihr Geschäft, Ihr Standort, Ihre Wünsche …"></textarea></div>
+      <button class="btn btn-dark" type="submit"><span data-i18n="fm.send">Anfrage senden</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="form-note" data-i18n="fm.note">Ihre Anfrage öffnet sich in Ihrem E-Mail-Programm und geht an info@beispiel.de.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand">
+        <span class="logo"><img src="img/fedek.png" alt="FEDEK" width="75" height="44"></span>
+        <p data-i18n="ft.tag">Autorisierter Ülker-Distributor in Deutschland. Türkische Markenprodukte für Ihren Handel.</p>
+      </div>
+      <div>
+        <h4 data-i18n="nav.contact">Kontakt</h4>
+        <ul>
+          <li><a href="tel:+490000000000">+49 000 0000000</a></li>
+          <li><a href="mailto:info@beispiel.de">info@beispiel.de</a></li>
+          <li>Musterstraße 1<br>00000 Musterstadt</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="ft.legal">Rechtliches</h4>
+        <ul>
+          <li><button class="linkbtn" type="button" data-open="impressum">Impressum</button></li>
+          <li><button class="linkbtn" type="button" data-open="datenschutz" data-i18n="ft.privacy">Datenschutz</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy" data-i18n="ft.copy">© 2026 FEDEK GmbH. Alle Rechte vorbehalten.</div>
+  </div>
+</footer>
+
+<dialog id="impressum" aria-labelledby="imp-h">
+  <div class="dlg">
+    <button class="dlg-close" type="button" data-close aria-label="Schließen">×</button>
+    <h2 id="imp-h">Impressum</h2>
+    <p>Angaben gemäß § 5 DDG</p>
+    <h3>FEDEK GmbH</h3>
+    <p>Musterstraße 1<br>00000 Musterstadt<br>Deutschland</p>
+    <h3>Vertreten durch</h3>
+    <p>[Name der Geschäftsführung]</p>
+    <h3>Kontakt</h3>
+    <p>Telefon: <a href="tel:+490000000000">+49 000 0000000</a><br>E-Mail: <a href="mailto:info@beispiel.de">info@beispiel.de</a></p>
+    <h3>Registereintrag</h3>
+    <p>Registergericht: [Amtsgericht]<br>Registernummer: [HRB …]</p>
+    <h3>Umsatzsteuer-ID</h3>
+    <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: [DE …]</p>
+  </div>
+</dialog>
+
+<dialog id="datenschutz" aria-labelledby="ds-h">
+  <div class="dlg">
+    <button class="dlg-close" type="button" data-close aria-label="Schließen">×</button>
+    <h2 id="ds-h">Datenschutzerklärung</h2>
+    <h3>1. Verantwortlicher</h3>
+    <p>FEDEK GmbH, Musterstraße 1, 00000 Musterstadt, Telefon +49 000 0000000, E-Mail info@beispiel.de</p>
+    <h3>2. Hosting</h3>
+    <p>Diese Website wird über GitHub Pages (GitHub Inc.) bereitgestellt. Beim Aufruf der Seite verarbeitet der Anbieter technisch notwendige Daten wie IP-Adresse, Datum und Uhrzeit in Server-Logfiles. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (sicherer und stabiler Betrieb der Website).</p>
+    <h3>3. Keine Cookies, kein Tracking</h3>
+    <p>Wir setzen keine Cookies und keine Analyse- oder Tracking-Dienste ein. Schriftarten werden lokal von unserem Server geladen.</p>
+    <h3>4. Kontaktaufnahme</h3>
+    <p>Wenn Sie uns per E-Mail oder Telefon kontaktieren, verarbeiten wir Ihre Angaben ausschließlich zur Bearbeitung Ihrer Anfrage (Art. 6 Abs. 1 lit. b DSGVO).</p>
+    <h3>5. Ihre Rechte</h3>
+    <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Zudem können Sie sich bei einer Datenschutz-Aufsichtsbehörde beschweren, z. B. bei der Landesbeauftragten für den Datenschutz Niedersachsen.</p>
+    <p style="margin-top:18px">Stand: Oktober 2026</p>
+  </div>
+</dialog>
+
+<script>
+(function () {
+  var DEMO = '/fedek-siparis/';
+  var BRANDS = [
+    ['alpella', 'Alpella'], ['bizimmutfak', 'Bizim Mutfak'], ['cafecrown', 'Café Crown'], ['camlica', 'Çamlıca'],
+    ['colaturka', 'Cola Turka'], ['halk', 'Halk'], ['icim', 'İçim'], ['karsa', 'Karsa'], ['kemalkukrer', 'Kemal Kükrer'],
+    ['saka', 'Saka'], ['taris', 'Tariş'], ['tat', 'Tat'], ['teremyag', 'Ülker Teremyağ'], ['zakia', 'Zakia']
+  ];
+
+  // Marken-Raster und Laufband
+  var grid = document.getElementById('brands');
+  BRANDS.forEach(function (b) {
+    var d = document.createElement('div');
+    d.className = 'brand-card rv';
+    d.innerHTML = '<img src="img/m/' + b[0] + '.png" alt="' + b[1] + '" loading="lazy">';
+    grid.appendChild(d);
+  });
+  var mq = document.getElementById('mq');
+  var chips = '<div class="chip"><img src="img/m/ulker.webp" alt="Ülker"></div>' + BRANDS.map(function (b) {
+    return '<div class="chip"><img src="img/m/' + b[0] + '.png" alt="' + b[1] + '"></div>';
+  }).join('');
+  mq.innerHTML = chips + chips.replace(/alt="[^"]*"/g, 'alt=""');
+
+  // Sprachen
+  var TR = {
+    'nav.about': 'Hakkımızda', 'nav.range': 'Ürünler', 'nav.app': 'Uygulama', 'nav.brands': 'Markalar', 'nav.contact': 'İletişim', 'nav.cta': 'Bayimiz olun',
+    'hero.eyebrow': 'Almanya\'nın yetkili Ülker distribütörü',
+    'hero.title': 'Memleketin lezzeti.<br><em>Doğrudan rafınıza.</em>',
+    'hero.lead': 'FEDEK, Almanya\'daki marketlere, büfelere ve perakendecilere Ülker\'i ve sevilen diğer Türk markalarını ulaştırır. Uygulamamızla da günün her saati sipariş verebilirsiniz.',
+    'hero.cta1': 'Uygulamayı keşfedin', 'hero.cta2': 'Bayimiz olun',
+    'hero.p1': 'Canlı fiyatlar', 'hero.p2': 'Size özel iskontolar', 'hero.p3': '7/24 sipariş',
+    'hero.tag': 'Canlı demo – dokunup deneyin', 'marquee.label': 'Markalarımız',
+    'about.eyebrow': 'Hakkımızda', 'about.title': 'Türk markalı ürünlerde iş ortağınız',
+    'about.p1': 'Yetkili Ülker distribütörü olarak FEDEK, Hannover\'dan sevilen markaları Alman perakendesine güvenle ulaştırır. Marketler, büfeler ve mağazalar geniş ürün yelpazesini bizden tek elden temin eder.',
+    'about.p2': 'Buna saha ekibimizin birebir ilgisi ve siparişi hiç olmadığı kadar kolaylaştıran mobil uygulamamız eşlik eder.',
+    'fact.1': 'Merkezimiz', 'fact.2': 'İş ortağı marka', 'fact.3': 'İki dilde hizmet',
+    'v1.t': 'Orijinal ve yetkili', 'v1.d': 'Yetkili kaynaktan resmi ürünler, kesintisiz tedarik zinciriyle.',
+    'v2.t': 'Birebir ilgi', 'v2.d': 'Sabit satış temsilciniz işletmenizi ve müşterilerinizi tanır.',
+    'v3.t': 'Planlı teslimat', 'v3.d': 'Sabit teslimat günleri ve net minimum sipariş tutarları; sürpriz yok.',
+    'range.eyebrow': 'Ürünler', 'range.title': 'Müşterilerinizin sevdikleri', 'range.lead': 'Efsane bisküvilerden çikolataya, en bilinen Ülker ürünleri tek elden.',
+    'cat.1': 'Bisküvi', 'cat.2': 'Çikolata', 'cat.3': 'Gofret', 'cat.4': 'Kek', 'cat.5': 'Kraker',
+    'range.more': 'Ve kahveden zeytinyağına daha birçok marka.',
+    'app.eyebrow': 'FEDEK Uygulaması', 'app.title': 'Saniyeler içinde sipariş.', 'app.lead': 'Tüm ürünler, size özel fiyatlar ve cari hesabınız her an cebinizde.',
+    'app.s1': 'App Store · yakında', 'app.s2': 'Google Play · yakında', 'app.demo': 'Canlı demoyu açın',
+    'f1.t': 'Canlı fiyatlar', 'f1.d': 'Fiyatlar doğrudan muhasebe sistemimizden gelir, her zaman günceldir.',
+    'f2.t': 'Size özel koşullar', 'f2.d': 'Her müşteri yalnızca kendi iskontosunu ve net fiyatını görür.',
+    'f3.t': 'Barkodla sipariş', 'f3.d': 'Raf mı boşaldı? Barkodu okutun, adedi seçin, bitti.',
+    'f4.t': 'Tek dokunuşla tekrar sipariş', 'f4.d': 'Son siparişiniz tek dokunuşla yeniden sepetinizde.',
+    'f5.t': 'Cari hesap ve faturalar', 'f5.d': 'Açık bakiye, risk limiti ve faturalar her an elinizin altında.',
+    'f6.t': 'Almanca ve Türkçe', 'f6.d': 'Uygulama sizin dilinizi konuşur; tek dokunuşla değişir.',
+    'brands.eyebrow': 'Markalar', 'brands.title': 'Birlikte çalıştığımız markalar', 'brands.lead': 'Ülker\'in yanında, hiçbir rafta eksik olmaması gereken markaları da sunuyoruz.',
+    'brands.ulker': 'Yetkili distribütör',
+    'contact.eyebrow': 'İletişim', 'contact.title': 'FEDEK bayisi olun', 'contact.lead': 'Bize yazın ya da arayın; size özel koşullarınız ve uygulama erişiminizle dönüş yapalım.',
+    'c.phone': 'Telefon', 'c.mail': 'E-posta', 'c.addr': 'Adres · Yol tarifi al',
+    'fm.company': 'Firma', 'fm.name': 'Yetkili kişi', 'fm.phone': 'Telefon', 'fm.mail': 'E-posta', 'fm.msg': 'Mesajınız',
+    'fm.ph': 'İşletmeniz, konumunuz, talepleriniz…', 'fm.send': 'Talebi gönder',
+    'fm.note': 'Talebiniz e-posta uygulamanızda açılır ve info@beispiel.de adresine gider.',
+    'ft.tag': 'Almanya\'nın yetkili Ülker distribütörü. İşletmeniz için Türk markalı ürünler.',
+    'ft.legal': 'Yasal', 'ft.privacy': 'Gizlilik (Datenschutz)', 'ft.copy': '© 2026 FEDEK GmbH. Tüm hakları saklıdır.'
+  };
+  var nodes = Array.prototype.slice.call(document.querySelectorAll('[data-i18n]'));
+  nodes.forEach(function (el) { el.__de = el.innerHTML; });
+  var phNodes = Array.prototype.slice.call(document.querySelectorAll('[data-i18n-ph]'));
+  phNodes.forEach(function (el) { el.__de = el.getAttribute('placeholder'); });
+  var demo = document.getElementById('demo');
+  var current = 'de';
+
+  function setLang(l, initial) {
+    current = l;
+    document.documentElement.lang = l;
+    nodes.forEach(function (el) { var k = el.getAttribute('data-i18n'); el.innerHTML = l === 'tr' && TR[k] ? TR[k] : el.__de; });
+    phNodes.forEach(function (el) { var k = el.getAttribute('data-i18n-ph'); el.setAttribute('placeholder', l === 'tr' ? TR[k] : el.__de); });
+    document.querySelectorAll('.lang button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === l)); });
+    if (!initial || l === 'tr') demo.src = DEMO + (l === 'tr' ? '?lang=tr' : '');
+    try { localStorage.setItem('fedek-lang', l); } catch (e) {}
+  }
+  document.querySelectorAll('.lang button').forEach(function (b) {
+    b.addEventListener('click', function () { if (b.getAttribute('data-lang') !== current) setLang(b.getAttribute('data-lang')); });
+  });
+  var saved = null;
+  try { saved = localStorage.getItem('fedek-lang'); } catch (e) {}
+  if (saved === 'tr') setLang('tr', true);
+
+  // Mobiles Menü
+  var nav = document.getElementById('nav'), burger = document.getElementById('burger');
+  burger.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', String(open));
+  });
+  document.querySelectorAll('#links a').forEach(function (a) {
+    a.addEventListener('click', function () { nav.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); });
+  });
+
+  // Einblenden beim Scrollen
+  var rv = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    rv.forEach(function (el, i) { el.style.transitionDelay = (i % 4) * 70 + 'ms'; io.observe(el); });
+  } else {
+    rv.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  // Impressum / Datenschutz
+  document.querySelectorAll('[data-open]').forEach(function (b) {
+    b.addEventListener('click', function () { document.getElementById(b.getAttribute('data-open')).showModal(); });
+  });
+  document.querySelectorAll('dialog').forEach(function (d) {
+    d.addEventListener('click', function (e) { if (e.target === d || e.target.hasAttribute('data-close')) d.close(); });
+  });
+
+  // Anfrage per E-Mail
+  document.getElementById('form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = e.target, v = function (n) { return (f.elements[n].value || '').trim(); };
+    var firma = v('firma'), name = v('name');
+    if (!firma || !name) {
+      (firma ? f.elements.name : f.elements.firma).focus();
+      return;
+    }
+    var subject = (current === 'tr' ? 'Bayilik talebi – ' : 'Händleranfrage – ') + firma;
+    var body = [
+      (current === 'tr' ? 'Firma: ' : 'Firma: ') + firma,
+      (current === 'tr' ? 'Yetkili kişi: ' : 'Ansprechpartner: ') + name,
+      (current === 'tr' ? 'Telefon: ' : 'Telefon: ') + v('tel'),
+      (current === 'tr' ? 'E-posta: ' : 'E-Mail: ') + v('mail'),
+      '',
+      v('msg')
+    ].join('\n');
+    window.location.href = 'mailto:info@beispiel.de?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  });
+})();
+</script>
+<script src="/_ortak/serit.js" defer></script></body>
+</html>
